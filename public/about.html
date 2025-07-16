@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maltsev Flooring</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header with horizontal nav -->
+    <header>
+        <h1>Maltev Flooring</h1>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="about.html" class="active">About Us</a></li>
+                <li><a href="projects.html">Projects</a></li>
+            </ul>
+        </nav>
+
+        <button class="quote-header-btn" id="openQuoteBtnTop">Get a Free Quote</button>
+    </header>
+
+    <!-- Hero Banner -->
+    <section class="hero-banner hero-small">
+        <div class="hero-content">
+            <h1>About Us</h1>
+        </div>
+    </section>
+
+    <!-- About Section-->
+    <section class="about-section">
+        <div class="about-content">
+            <div class="about-text">
+                <h2>About Maltsev Flooring</h2>
+                <p>With over 20 years in the flooring and contracting business, Maltsev Flooring has grown from a small family workshop into Arlington’s go‑to flooring experts. Our foundation is built on trust, craftsmanship, and an unwavering commitment to quality.</p>
+                <p>We believe in honest communication and transparent pricing—so you always know exactly what to expect. From selecting the perfect hardwood species to coordinating permits and inspections, we handle every detail so you can sit back and watch your vision come to life.</p>
+                <p>Our team of seasoned professionals brings expertise in solid wood, engineered, laminate, and vinyl plank installations, as well as flooring repair and refinishing. Whether you’re renovating a cozy bungalow or fitting out a large commercial space, we deliver durable, beautiful floors that stand the test of time.</p>
+                <button class="btn" id="openQuoteBtnTop">Get in Touch</button>
+            </div>
+
+            <div class="about-image">
+                <img src="images/about-team.jpg" alt="Maltsev Flooring team at work">
+            </div>
+        </div>
+    </section>      
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Maltsev Flooring</h3>
+                <p>Reliable craftsmanship in Arlington since 2020.</p>
+            </div>
+        
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                </ul>
+            </div>
+        
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <a href="#">Facebook</a> 
+                <a href="#">Instagram</a> 
+                <a href="#">LinkedIn</a>
+            </div>
+        
+            <div class="footer-section">
+                <h3>Subscribe</h3>
+                <form id="subscribeForm">
+                    <input type="email" id="subs-email" placeholder="Your email" required />
+                    <button type="submit" class="btn">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    
+        <p class="copyright">
+            &copy; 2025 Maltsev Flooring. All rights reserved.
+        </p>
+    </footer>
+
+    <!-- Quote Modal -->
+    <div id="quoteModal" class="modal">
+        <div class="modal-content quote-form-box">
+            <span class="close-btn" id="closeQuoteBtn">&times;</span>
+            <h2>Free Quote Request</h2>
+            <p class="quote-intro">Let us know what you're planning. We'll respond within 24 hours.</p>
+            <form id="modalQuoteForm">
+                <label for="hq-name-modal">Name</label>
+                <input type="text" id="hq-name-modal" name="name" required>
+              
+                <label for="hq-email-modal">Email</label>
+                <input type="email" id="hq-email-modal" name="email" required>
+              
+                <label for="hq-phone-modal">Phone Number</label>
+                <input type="tel" id="hq-phone-modal" name="phone" pattern="[0-9]{10}" placeholder="e.g., 4251234567" required>
+              
+                <label for="hq-details-modal">Project Details</label>
+                <textarea id="hq-details-modal" name="details" rows="4" required></textarea>
+              
+                <button type="submit" class="fancy-btn">Send My Quote</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Script -->
+    <script src="script.js"></script>
+</body>
+</html>
