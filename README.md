@@ -19,5 +19,5 @@ Developed using **Node.js, JavaScript, HTML, and CSS**, with both frontend and b
 - Provide an easy way for customers to learn about services and get in touch
 - Demonstrate full-stack development skills with real-world application
 
-## How to Run Locally
-running at: https://maltsev-flooring.onrender.com
+## Running at
+https://maltsev-flooring.onrender.com
